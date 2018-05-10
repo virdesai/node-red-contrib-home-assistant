@@ -1,7 +1,7 @@
 FROM hypriot/rpi-node:8-slim
 
 COPY root-fs /
-RUN chown -R node:node /data /app
+#RUN chown -R node:node /data /app
 
 # Install NodeRed base app
 ENV HOME=/app
