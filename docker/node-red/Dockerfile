@@ -5,7 +5,7 @@ COPY root-fs /
 
 # Install NodeRed base app
 ENV HOME=/app
-USER node
+# USER node
 WORKDIR /app
 RUN npm install
 
