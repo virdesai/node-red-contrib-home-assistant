@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-node:6-slim
+FROM resin/%%RESIN_MACHINE_NAME%%-node:8-slim
 
 # Defines our working directory in container
 WORKDIR /usr/src/app
