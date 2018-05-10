@@ -13,7 +13,7 @@
     "dev": "npm run docker:up",
     "dev:clean": "npm run docker:down",
     "docker:up": "npm run docker -- up --build --abort-on-container-exit --remove-orphans",
-    "docker:down": "npm run docker -- down -vt5 && npm run docker -- rm -fv",
+    "docker:down": "docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q) && npm run docker -- down -vt5 && npm run docker -- rm -fv",
     "docker:restart": "npm run docker -- restart",
     "docker:logs": "npm run docker -- logs -f && true",
     "docker": "docker-compose -f docker/docker-compose.yml",

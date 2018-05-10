@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-node:8-slim
+FROM hypriot/rpi-node:8-slim
 
 COPY root-fs /
 RUN chown -R node:node /data /app
