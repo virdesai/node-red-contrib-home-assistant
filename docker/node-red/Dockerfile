@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-node:6-slim
+FROM resin/%%RESIN_MACHINE_NAME%%-node:8-slim
 
 COPY root-fs /
 RUN chown -R node:node /data /app
