@@ -13,7 +13,7 @@ WORKDIR /app
 #   npm install --quiet && \
 #   apk del native-deps
 
-RUN apk add python python3 && npm install
+RUN apk add g++ gcc libgcc libstdc++ linux-headers make python python3 && npm install
 
 # Install Useful Home Automation Nodes
 RUN npm install \
