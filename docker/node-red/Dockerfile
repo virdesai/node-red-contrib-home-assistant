@@ -1,4 +1,4 @@
-FROM arm32v7/node:8-slim
+FROM node:8.9.4-alpine
 
 COPY root-fs /
 #RUN chown -R node:node /data /app
