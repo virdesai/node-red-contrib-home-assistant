@@ -7,11 +7,13 @@ COPY root-fs /
 ENV HOME=/app
 # USER node
 WORKDIR /app
-RUN apk --no-cache add --virtual native-deps \
-  g++ gcc libgcc libstdc++ linux-headers make python python3 && \
-  npm install --quiet node-gyp -g &&\
-  npm install --quiet && \
-  apk del native-deps
+# RUN apk --no-cache add --virtual native-deps \
+#   g++ gcc libgcc libstdc++ linux-headers make python python3 && \
+#   npm install --quiet node-gyp -g &&\
+#   npm install --quiet && \
+#   apk del native-deps
+
+RUN apk python python3 && npm install
 
 # Install Useful Home Automation Nodes
 RUN npm install \
