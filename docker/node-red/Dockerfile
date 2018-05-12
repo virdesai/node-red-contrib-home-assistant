@@ -1,4 +1,4 @@
-FROM hypriot/rpi-node:8-slim
+FROM node:8.9.4
 
 COPY root-fs /
 #RUN chown -R node:node /data /app
