@@ -12,4 +12,4 @@ ENV HA_HOME_ASSISTANT_TIME_ZONE=America/New_York    \
 
 COPY root-fs /
 
-CMD [ "python3", "-m", "homeassistant", "--config", "/config" ]
+CMD [ "python", "-m", "homeassistant", "--config", "/config" ]
