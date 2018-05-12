@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:0.68.1
+FROM homeassistant/raspberrypi3-homeassistant:latest
 
 ENV HA_HOME_ASSISTANT_TIME_ZONE=America/New_York    \
     HA_HOME_ASSISTANT_LATITUDE=35.927092            \
