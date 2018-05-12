@@ -13,7 +13,7 @@ RUN npm install
 RUN npm install \
     node-red-contrib-bigstatus
 
-RUN apt-get install python-rpi.gpio python3-rpi.gpio
+RUN sudo apt-get install python-rpi.gpio python3-rpi.gpio
 
 # User configuration directory volume
 EXPOSE 1880
