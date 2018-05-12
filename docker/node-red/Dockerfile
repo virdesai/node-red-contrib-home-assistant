@@ -13,8 +13,6 @@ RUN npm install
 RUN npm install \
     node-red-contrib-bigstatus
 
-RUN apt-get update && apt-get install python3-rpi.gpio
-
 # User configuration directory volume
 EXPOSE 1880
 EXPOSE 9229
