@@ -1,4 +1,4 @@
-FROM node:8.9.4-alpine
+FROM node:8.9.4
 
 COPY root-fs /
 #RUN chown -R node:node /data /app
@@ -7,9 +7,9 @@ COPY root-fs /
 ENV HOME=/app
 # USER node
 WORKDIR /app
-RUN apk --no-cache add --virtual native-deps \
-  g++ gcc libgcc libstdc++ linux-headers make python python3 && \
-  npm install
+# RUN apk --no-cache add --virtual native-deps \
+#   g++ gcc libgcc libstdc++ linux-headers make python python3 && \
+#   npm install
 
 # Install Useful Home Automation Nodes
 RUN npm install \
