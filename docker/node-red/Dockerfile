@@ -8,9 +8,6 @@ ENV HOME=/app
 # USER node
 WORKDIR /app
 RUN npm install
-# RUN apk --no-cache add --virtual native-deps \
-#   g++ gcc libgcc libstdc++ linux-headers make python python3 && \
-#   npm install
 
 # Install Useful Home Automation Nodes
 RUN npm install \

@@ -8,7 +8,7 @@ ENV HA_HOME_ASSISTANT_TIME_ZONE=America/New_York    \
     HA_HOME_ASSISTANT_UNIT_SYSTEM=imperial          \
     HA_HTTP_API_PASSWORD=password                   \
     HA_LOGGER_DEFAULT=info                          \
-    NODE_RED_URL=http://localhost:1880/
+    NODE_RED_URL=0.0.0.0:1880
 
 COPY root-fs /
 
